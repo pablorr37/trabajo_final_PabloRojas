@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currículum Pablo Rojas</title>
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Sarabun&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <!-- JS -->
+    <script src="JS/script.js" defer></script>
+    <!--Awesome Font-->
+    <link href="/css/fontawesome.css" rel="stylesheet">
+    <link href="/css/solid.css" rel="stylesheet">
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav>        
+        <ul id="ul_nav">
+            <li><a href="#titulo" title="Inicio"><span class="fa-solid fa-house fa-2xl"></span></a></li>
+            <li><a href="#trabajo" title="Trabajo actual"><span class="fa-solid fa-briefcase fa-2xl"></span></a></li>
+            <li><a href="#trabajo_destacado" title="Trabajos destacados"><span class="fa-solid fa-business-time fa-2xl"></span></a></li>
+            <li><a href="#academica" title="Formación académica"><span class="fa-solid fa-book-open-reader fa-2xl"></span></a></li>
+            <li><a id="icono_contactar" href="#contactar" title="Contactar"><span class="fa-solid fa-paper-plane fa-2xl"></span></a></li>
+        </ul>
+    </nav>
+    <header id="titulo">
+        <h1></h1>
+        <h1>Curriculum vitae Pablo Rojas</h1>
+    </header>
+    <div class="contenedor">
+        <header class="header">
+            <!--La cabecera tiene la función edad(), que actualiza la edad
+            con el paso de los años. Para verla, ir a script.js-->
+            <h1 id="cabecera"></h1>
+        </header>
+        <!--Sección principal-->
+        <main class="contenido">
+            <article class="texto">
+                <h1 id="trabajo">Historial laboral</h1>
+                <p>
+                    Pablo Rojas trabaja actualmente como corrector ortográfico de la edición impresa de Diario de Cuyo, de la provincia de San Juan, desde el año 2014. Tiene bajo su responsabilidad la correción de los suplementos Verde y OH!, además de la edición diaria. Escribe ocasionalmente columnas de ciencia para la edición web de Diario de Cuyo.
+                </p>
+                <p>
+                    Desde 2011 hasta 2017 fue tutor de Lengua, Comunicación, Ciencias Sociales y Astronomía en la Escuela Profesor Víctor Mercante, de Angaco, San Juan. Además, fue tallerista en numerosos CAJ de la provincia.
+                </p>
+                <p>
+                    En el año 2022 ganó el Concurso Literario San Juan Escribe, premio Jorge Leonidas Escudero, con la novela El sueño de la calandria, cuya publicación se realizará durante 2023.
+                    También fue operador de cyber, conductor, operador y productor radial, además de desempeñarse en revistas, fanzines y publicaciones digitales.
+                </p>
+            </article>
+            <article class="texto">
+                <h1 id="academica">Formación académica</h1>
+                <p>
+                    Cursó la Licenciatura en Comunicación Social con orientación en Educación en la Universidad Nacional de San Juan desde el año 2007 hasta 2014. Fue adscripto en tres materias (Teoría de la Comunicación II, Lingüística y Comunicación y Taller de Producción Gráfica III). 
+                </p>
+                <p>
+                    En el año 2019 realizó el curso Comunicación Pública de la Ciencia, modalidad no presencial, donde adquirió competencias relacionadas a la redacción de noticias científicas, la recopilación de fuentes y su ponderación.
+                </p>
+                <p>
+                    Actualmente cursa Introducción a la programación frontend, en Ticmas Academy.
+                </p>
+            </article>
+            <article class="texto">
+                <h1>Formación no universitaria</h1>
+                <p>
+                    Aprendió a programar en Visual Fox Pro cuando era chico y su padre, analista de sistemas, le enseñó algunos conceptos básicos. Con el tiempo, fue aprendiendo por su cuenta y resolvió problemas de su vida académica o laboral desarrollando sus propias herramientas informáticas.
+                    Actualmente desarrolla un corrector automático para facilitar su labor en Diario de Cuyo.
+                    Desde 2021 estudia Python y JavaScript.
+                </p>
+                <p>
+                    Autodidacta, conoce sobre astronomía, geografía, historia, ciencias naturales y toda una amplia rama de conocimientos que puede, por via escrita, oral o mediática, enseñarlos a una gran gama etaria.
+                </p>
+            </article>
+        </main>
+        <!--Aside-->
+        <aside class="sidebar">
+            <div id="contactar">
+                <button id="boton_1">
+                    Contactar
+                </button>
+                <form id="contacto" action="" method="post">
+                <!--el atributo action está vacío porque no hay
+                ninguna acción establecida-->
+                    <ul>
+                        <li>
+                          <label for="name">Nombre:</label>
+                          <input type="text" id="name" name="nombre_usuario">
+                        </li>
+                        <li>
+                          <label for="mail">Correo electrónico:</label>
+                          <input type="email" id="mail" name="correo_usuario">
+                        </li>
+                        <li>
+                          <label for="msg">Mensaje:</label>
+                          <textarea id="msg" name="mensaje_usuario"></textarea>
+                        </li>
+                    </ul>
+                    <li class="button">
+                        <button type="submit">Enviar</button>
+                    </li>
+                </form>
+            </article>    
+            <div>
+                <img id="perfil" src="Media/image1.jpg" alt="Pablo E. Rojas">
+                <p>
+                    Cursó sus estudios primarios en la Escuela Mariano Necochea desde el año 1994 hasta 2000. Fue abanderado de la Bandera Nacional con promedio 9,78.
+                </p>
+            </article>
+            <div>
+                <p>
+                    Durante la secundaria asistió a la Escuela de Fruticultura y Enología hasta el año 2003, donde aprendió numerosos conocimientos relacionados al cuidado de hortalizas y plantas en general.
+                    Luego, de 2004 hasta 2006 asistió a la Escuela Normal Superior General San Martín, donde participó en revistas escolares y fue delegado de curso tres años.
+                </p>
+            </article>
+            <div>
+                <img src="Media/image2.jpg" width="279" height="384" alt="Portada de El sueño de la calandria">
+                <p>
+                En 2022 ganó el primer premio en el concurso literario San Juan Escribe con la novela El sueño de la calandria, cuya impresión se espera para los primeros meses de 2023. La imagen anterior es un boceto de la portada.
+                </p>
+            </article>
+
+        </aside>
+        <!--Sección secundaria-->
+        <div class="trabajo_destacado">
+            <p id="trabajo_destacado">
+                Corrector ortográfico de la edición impresa de Diario de Cuyo.
+            </p>
+        </div>
+        <div class="trabajo_destacado">
+            <p>
+                Escritor. Autor de El sueño de la calandria, novela ganadora del premio Jorge Leonidas Escudero en el año 2022.
+            </p>
+        </div>
+        <div class="trabajo_destacado">
+            <p>
+                Redactor de notas sobre temas científicos y de conocimientos en general.
+            </p>
+        </div>
+        <div class="trabajo_destacado">
+            <p>
+                Tutor de Lengua y Comunicación, Astronomía y Ciencias Sociales.
+            </p> 
+        </div>
+        <div class="trabajo_destacado">
+            <p>
+                Conductor de radio. Community Manager. Desarrollador de software.
+            </p>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <h4>Diseñado y programado por:</h4>
+            <p>
+                Pablo Rojas para Ticmas Adademy, febrero de 2023.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
